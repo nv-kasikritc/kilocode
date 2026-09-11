@@ -28,6 +28,8 @@ When you mention `@Kilo` in a thread, the bot:
 @Kilo how is error handling implemented in the payment processing module?
 ```
 
+{% image src="/docs/img/connect/slack/slackbot-ask-questions.webp" alt="Asking Kilo a question about the codebase in Slack" width="800" /%}
+
 ### Implement fixes and features from Slack discussions
 
 When your team identifies a bug or improvement in a thread, ask the bot to handle it:
@@ -43,6 +45,8 @@ The bot will:
 - Create a branch with the implementation
 - Push a pull request to your repository
 
+{% image src="/docs/img/connect/slack/slackbot-turn-discussions-into-PRs.webp" alt="Kilo turning a Slack thread discussion into a pull request" width="800" /%}
+
 ### Implement changes across multiple repositories
 
 If the same change needs to land in several repos, just tell the bot:
@@ -50,6 +54,8 @@ If the same change needs to land in several repos, just tell the bot:
 ```
 @Kilo please fix this in the cloud, landing, and handbook repos
 ```
+
+{% image src="/docs/img/connect/slack/slackbot-coding.webp" alt="Kilo implementing changes across multiple repositories from Slack" width="800" /%}
 
 ### Debug issues
 
@@ -60,6 +66,8 @@ Paste an error message or stack trace and ask for help:
 [paste error message]
 Can you help me understand what's causing it?
 ```
+
+{% image src="/docs/img/connect/slack/slackbot-bugs.webp" alt="Kilo helping debug a production error in Slack" width="800" /%}
 
 ---
 
@@ -102,7 +110,19 @@ Before using Kilo for Slack:
 
 ## Setup
 
-To install Kilo for Slack, go to the Integrations menu in the sidebar at [app.kilo.ai](https://app.kilo.ai) and set up the Slack integration.
+To install Kilo for Slack, go to the Integrations menu in the sidebar at [app.kilo.ai](https://app.kilo.ai) and set up the Slack integration:
+
+{% image src="/docs/img/connect/slack/slackbot-integrations.webp" alt="Kilo Integrations page where you install the Slack integration" width="800" /%}
+
+Then hit the Configure button, which will take you to this page:
+{% image src="/docs/img/connect/slack/slackbot-integrations-2.webp" alt="Kilo Integrations page where you install the Slack integration, step 2" width="800" /%}
+
+Once you press "Connect with Slack", the Slack OAuth authorization page appears:
+{% image src="/docs/img/connect/slack/slackbot-slack-authorize.webp" alt="Slack OAuth authorization page" width="800" /%}
+
+Once this is completed you're good to go!
+
+To make proper use of all of the Kilo Slack bot's capabilities, it's important that you also connect your source control provider with Kilo:
 
 | Platform | Integration Type | Details |
 |---|---|---|
